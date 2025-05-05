@@ -1,0 +1,12 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+  <head><meta charset="UTF-8" /><title>My Electron App</title></head>
+  <body>
+    <h1>Hello Electron!</h1>
+    <p>Version: <span id="ver"></span></p>
+    <script>
+      document.getElementById('ver').innerText = require('electron').app.getVersion()
+    </script>
+  </body>
+</html>
